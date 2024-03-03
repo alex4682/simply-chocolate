@@ -1,8 +1,8 @@
 {
-  "name": "alex4682",
+  "name": "simply-chocolate",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://alex4682.github.io/simply-chocolate",
+  "homepage": "https://github.com/alex4682/simply-chocolate",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /simply-chocolate/"
