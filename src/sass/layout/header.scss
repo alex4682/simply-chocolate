@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-logo {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 111%;
+    letter-spacing: -0.54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 215px;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 530px;
+    align-items: center;
+}
+
+.header-list-link {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 114.286%;
+    letter-spacing: -0.28px;
+}
+
+.header-social {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
