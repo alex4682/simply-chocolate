@@ -1,5 +1,5 @@
 .banner {
-    background-image: url(../images/banner-bg.jpg);
+    background-image: url(../images/banner-bg-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
@@ -8,7 +8,23 @@
     flex-direction: column;
     justify-content: end;
     padding: 25px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/banner-bg-tablet.jpg);
+
+        .banner-scroll {
+            align-self: end;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/banner-bg.jpg);
+    }
 }
+
 
 .banner-title {
     color: #FFF;
@@ -19,6 +35,13 @@
     letter-spacing: -0.84px;
     width: 480px;
     margin-bottom: 32px;
+}
+
+.banner-scroll {
+    display: flex;
+    align-self: start;
+    gap: 20px;
+    align-items: center;
 }
 
 .banner-list {
@@ -38,7 +61,7 @@
     font-weight: 600;
 }
 
-.made {
+.banner-made {
     border-radius: 100px;
     border: 1px solid #FFF;
     background: none;
@@ -50,12 +73,6 @@
     font-weight: 600;
 }
 
-.banner-scroll {
-    align-self: end;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
 
 .banner-text {
     color: #FFF;
