@@ -1,0 +1,78 @@
+.banner {
+    background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 25px;
+}
+
+.banner-title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 121.429%;
+    letter-spacing: -0.84px;
+    width: 480px;
+    margin-bottom: 32px;
+}
+
+.banner-list {
+    display: flex;
+    gap: 15px;
+}
+
+.buy {
+    border: none;
+    border-radius: 100px;
+    background: #FD9222;
+    height: 35px;
+    width: 120px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.made {
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: none;
+    height: 35px;
+    width: 170px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner-scroll {
+    align-self: end;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.banner-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 128.571%;
+    letter-spacing: -0.42px;
+}
+
+.scroll {
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+}
+
+.scroll-svg {
+    fill: #FD9222;
+}
