@@ -67,6 +67,9 @@
     background: none;
     height: 35px;
     width: 170px;
+}
+
+.banner-made a {
     color: #FFF;
     font-family: Montserrat;
     font-size: 14px;
@@ -84,10 +87,19 @@
 }
 
 .scroll {
-    border: none;
+    display: flex;
+    align-self: end;
+    align-items: center;
+    gap: 10px;
+    max-width: 140px;
+}
+
+.scroll svg {
+    padding: 7px;
     width: 38px;
     height: 38px;
     border-radius: 50px;
+    background: #FFF;
 }
 
 .scroll-svg {
