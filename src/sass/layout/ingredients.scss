@@ -1,0 +1,79 @@
+.ingredients {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ingredients-title {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 116.667%;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.ingredients-text {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 128.571%;
+    letter-spacing: -0.28px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.ingredients-item:first-child {
+    background: #FD9222;
+}
+
+.ingredients-item:nth-child(2) {
+    border: 1px solid #FD9222;
+    background: #FFF;
+}
+
+.ingredients-item:nth-child(3) {
+    border-radius: 15px;
+    background: #1E1823;
+}
+
+.ingredients-item:last-child {
+    border: 1px solid #FD9222;
+    background: #FFF;
+}
+
+.ingredients-item {
+    border-radius: 15px;
+    display: flex;
+    padding: 28px 36px 28px 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36px;
+}
+
+.ingredients-list-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 128.571%;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
+
+.ingredients-item:nth-child(2) .ingredients-list-text,
+.ingredients-item:last-child .ingredients-list-text {
+    color: #111;
+}
