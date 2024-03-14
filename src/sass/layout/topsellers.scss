@@ -1,0 +1,89 @@
+.topsellers {
+    margin-top: 105px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topsellers-title {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.topsellers-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.topsellers-item:nth-child(3) img {
+    display: none;
+}
+
+.topsellers-item:nth-child(2) {
+    order: 2;
+}
+
+.topsellers-item-text {
+    order: 1;
+}
+
+.topsellers-text {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 128.571%;
+    letter-spacing: -0.28px;
+    width: 306px;
+}
+
+.topsellers-btn {
+    border: none;
+    border-radius: 100px;
+    background: #FD9222;
+    width: 160px;
+    height: 50px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .topsellers-item:nth-child(2) {
+        order: 2;
+    }
+
+    .topsellers-item-text {
+        order: 3;
+    }
+
+    .topsellers-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .topsellers-item:nth-child(3) img {
+        display: inline;
+    }
+
+    .topsellers-text {
+        width: 407px;
+    }
+}
