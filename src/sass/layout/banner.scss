@@ -22,6 +22,41 @@
 
     @media screen and (min-width:1200px) {
         background-image: url(../images/banner-bg.jpg);
+
+        .banner-text {
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 128.571%;
+            letter-spacing: -0.42px;
+        }
+
+        .scroll {
+            display: flex;
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            align-items: center;
+            gap: 10px;
+            max-width: 140px;
+            background-color: #000000;
+            border-radius: 20px;
+            padding: 5px;
+            z-index: 5;
+        }
+
+        .scroll svg {
+            padding: 7px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50px;
+            background: #ffffff;
+        }
+
+        .scroll-svg {
+            fill: #FD9222;
+        }
     }
 }
 
@@ -76,32 +111,6 @@
     font-weight: 600;
 }
 
-
-.banner-text {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 128.571%;
-    letter-spacing: -0.42px;
-}
-
 .scroll {
-    display: flex;
-    align-self: end;
-    align-items: center;
-    gap: 10px;
-    max-width: 140px;
-}
-
-.scroll svg {
-    padding: 7px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50px;
-    background: #FFF;
-}
-
-.scroll-svg {
-    fill: #FD9222;
+    display: none;
 }
