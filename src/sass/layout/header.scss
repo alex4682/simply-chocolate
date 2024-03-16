@@ -18,12 +18,22 @@
             font-weight: 500;
             line-height: 114.286%;
             letter-spacing: -0.28px;
+
+            &:hover {
+                color: rgba(253, 146, 34, 1);
+            }
         }
 
         .header-social {
             display: flex;
             gap: 18px;
             align-items: center;
+        }
+
+        .header-social svg {
+            &:hover {
+                fill: rgba(253, 146, 34, 1);
+            }
         }
 
         .header-social use {
