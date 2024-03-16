@@ -94,6 +94,11 @@
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
+
+    &:hover {
+        background: #FCF1E0;
+        color: #FD9222;
+    }
 }
 
 .banner-made {
@@ -102,6 +107,14 @@
     background: none;
     height: 35px;
     width: 170px;
+
+    &:hover {
+        border: 1px solid #FD9222;
+    }
+
+    &:hover a {
+        color: #FD9222;
+    }
 }
 
 .banner-made a {
