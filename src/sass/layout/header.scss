@@ -31,7 +31,7 @@
         }
 
         .header-social svg {
-            &:hover {
+            &:hover use {
                 fill: rgba(253, 146, 34, 1);
             }
         }

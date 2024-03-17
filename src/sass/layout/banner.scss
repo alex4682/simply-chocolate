@@ -44,6 +44,37 @@
             border-radius: 20px;
             padding: 5px;
             z-index: 5;
+
+            &:hover svg {
+                background-color: #FD9222;
+            }
+
+            &:hover .scroll-svg {
+                fill: #FFF;
+            }
+
+            &:hover .banner-text {
+                color: #FD9222;
+            }
+
+            &:hover {
+                background-color: #FFF;
+            }
+
+            &:focus-within svg {
+                background-color: #f4c28c;
+                transition: cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+            }
+
+            &:focus-within .scroll-svg {
+                fill: #646464;
+                transition: cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+            }
+
+            &:focus-within .banner-text {
+                color: #f4c28c;
+                transition: cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+            }
         }
 
         .scroll svg {
