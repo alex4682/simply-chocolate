@@ -1,0 +1,195 @@
+/* Slider */
+.slick-slider {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-track {
+    width: 3200px !important;
+}
+
+.slick-list {
+    order: -1;
+}
+
+.slick-prev {
+    order: 1;
+}
+
+.slick-next {
+    order: 3;
+}
+
+.slick-dots {
+    order: 2;
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slick-dots button {
+    border: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    color: rgba(17, 17, 17, 0);
+    background-color: rgba(17, 17, 17, 0.1);
+
+    &:hover {
+        background-color: #fd9322ad;
+    }
+}
+
+.slick-active button {
+    width: 28px;
+    background-color: #fd9222;
+}
+
+.slick-prev,
+.slick-next {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    color: rgba(17, 17, 17, 0);
+    background-color: #fd9222;
+}
+
+@media screen and (max-width: 768px) {
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .product-item:last-child {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-item:last-child {
+        display: inline-block;
+    }
+}
