@@ -1,35 +1,21 @@
-$('.product-list').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                dots: true,
-                infinite: false,
-            }
+const mySlider = new Splide('#mySlider', {
+    perPage: 4,
+    gap: "18px",
+    type: 'loop',
+    focus: 0,
+    omitEnd: true,
+    pagination: true,
+    breakpoints: {
+        768: {
+            pagination: true,
+            perPage: 1,
+            arrows: false,
         },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
+        1200: {
+            perPage: 2,
+            arrows: true,
         },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
-});
+    }
+})
+
+mySlider.mount()
