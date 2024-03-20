@@ -34,26 +34,26 @@
     margin-top: 20px;
 }
 
-.ingredients-item:first-child {
+.ingredients-item:first-child .flip-card-front {
     background: #FD9222;
 }
 
-.ingredients-item:nth-child(2) {
+.ingredients-item:nth-child(2) .flip-card-front {
     border: 1px solid #FD9222;
     background: #FFF;
 }
 
-.ingredients-item:nth-child(3) {
+.ingredients-item:nth-child(3) .flip-card-front {
     border-radius: 15px;
     background: #1E1823;
 }
 
-.ingredients-item:last-child {
+.ingredients-item:last-child .flip-card-front {
     border: 1px solid #FD9222;
     background: #FFF;
 }
 
-.ingredients-item {
+.flip-card-front {
     border-radius: 15px;
     display: flex;
     padding: 28px 36px 28px 28px;
