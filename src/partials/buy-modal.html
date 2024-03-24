@@ -1,0 +1,82 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal" data-modal-animation>
+    <button class="modal-close" data-modal-close>
+      <svg class="modal-close-svg" width="18" height="18">
+        <use
+          href="images/symbol-defs.svg#icon-close"
+          width="18"
+          height="18"
+        ></use>
+      </svg>
+    </button>
+    <h2 class="buy_modal-title">
+      <span style="color: rgba(253, 146, 34, 1)">BUY</span> NOW
+    </h2>
+    <ul class="buy_modal-list">
+      <li class="buy_modal-item">
+        <img src="images/buy_modal-1.png" alt="1" />
+        <p class="buy_modal-list-text">100 g</p>
+      </li>
+      <li class="buy_modal-item">
+        <img src="images/buy_modal-2.png" alt="2" />
+        <p class="buy_modal-list-text">200 g</p>
+      </li>
+      <li class="buy_modal-item">
+        <img src="images/buy_modal-3.png" alt="3" />
+        <p class="buy_modal-list-text">300 g</p>
+      </li>
+    </ul>
+    <form class="buy_modal-form">
+      <p class="buy_modal-text">Personal information</p>
+      <label class="buy_modal-name-label">
+        <input type="text" name="username" placeholder="Name" class="name" />
+        <input
+          type="text"
+          name="username"
+          placeholder="Surname"
+          class="surname"
+        />
+      </label>
+      <p class="buy_modal-text">Email</p>
+      <label>
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your emeil"
+          class="buy_modal-input"
+        />
+      </label>
+      <p class="buy_modal-text">Phone number</p>
+      <label class="buy_modal-label">
+        <svg width="32" height="24">
+          <use href="images/symbol-defs.svg#icon-ukraine"></use>
+        </svg>
+        <p>+380</p>
+        <div class="phone-border"></div>
+        <input
+          type="text"
+          name="phone"
+          placeholder="Phone number"
+          class="number"
+        />
+      </label>
+      <p class="buy_modal-tex">Card number</p>
+      <label class="buy_modal-label">
+        <input type="text" name="card" placeholder="Enter card" class="card" />
+        <svg width="44" height="30">
+          <use href="images/symbol-defs.svg#icon-mastercard"></use>
+        </svg>
+      </label>
+      <p class="buy_modal-tex">Comment</p>
+      <label>
+        <input
+          type="text"
+          name="comment"
+          placeholder="Enter text"
+          class="comment"
+        />
+      </label>
+      <button type="submit" class="submit">Submit</button>
+    </form>
+  </div>
+</div>
